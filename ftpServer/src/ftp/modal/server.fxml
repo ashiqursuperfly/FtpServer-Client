@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="366.0" prefWidth="655.0" snapToPixel="true" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ftp.controller.ServerController">
+   <children>
+      <Label layoutX="279.0" layoutY="19.0" text="Server at port: " />
+      <Label fx:id="portLabel" layoutX="385.0" layoutY="19.0" text="null" />
+      <ListView fx:id="logger" layoutX="10.0" layoutY="47.0" prefHeight="297.0" prefWidth="430.0" />
+      <ListView fx:id="userListView" layoutX="472.0" layoutY="47.0" prefHeight="297.0" prefWidth="160.0" />
+      <Label layoutX="472.0" layoutY="19.0" text="Currently Active Users" />
+   </children>
+</AnchorPane>

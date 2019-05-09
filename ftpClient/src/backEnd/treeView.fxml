@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1000.0" maxWidth="1440.0" minHeight="1000.0" minWidth="1440.0" prefHeight="1000.0" prefWidth="1440.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontEnd.ControllerTreeView">
+   <children>
+      <TreeView fx:id="treeView" layoutX="2.0" layoutY="53.0" onContextMenuRequested="#mouseClick" onMouseClicked="#mouseClick" prefHeight="579.0" prefWidth="624.0" />
+      <Button fx:id="buttonDownload" layoutX="275.0" layoutY="634.0" mnemonicParsing="false" onAction="#downloadButtonAction" prefHeight="37.0" prefWidth="107.0" text="Download">
+         <font>
+            <Font name="System Bold Italic" size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonDelete" layoutX="382.0" layoutY="634.0" mnemonicParsing="false" onAction="#deleteButtonAction" prefHeight="37.0" prefWidth="107.0" text="Delete">
+         <font>
+            <Font name="System Bold Italic" size="16.0" />
+         </font>
+      </Button>
+      <Label layoutX="1160.0" prefHeight="50.0" prefWidth="160.0" style="-fx-background-color: white;" text="     FTP Client" textFill="#30a4e8db">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textFieldSelectedFile" layoutX="2.0" layoutY="634.0" prefHeight="37.0" prefWidth="273.0" />
+      <TextField fx:id="textFieldEnterCommand" layoutX="1049.0" layoutY="680.0" prefHeight="37.0" prefWidth="160.0" />
+      <Button fx:id="buttonSend" layoutX="1108.0" layoutY="717.0" mnemonicParsing="false" onAction="#sendButtonAction" text="Send" />
+      <Label layoutY="14.0" prefHeight="25.0" prefWidth="624.0" style="-fx-background-color: white;" text="                                       Server Directory" textFill="#30a4e8">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonSelectFile" layoutX="318.0" layoutY="781.0" mnemonicParsing="false" onAction="#selectFileButtonAction" prefHeight="44.0" prefWidth="213.0" text="Select File.." />
+      <TextField fx:id="textFieldUpload" layoutX="1.0" layoutY="784.0" prefHeight="37.0" prefWidth="317.0" />
+      <Button fx:id="buttonUpload" layoutX="159.0" layoutY="828.0" mnemonicParsing="false" onAction="#uploadButtonAction" prefHeight="37.0" prefWidth="96.0" text="UPLOAD">
+         <font>
+            <Font name="System Bold Italic" size="13.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="choiceBox" layoutY="756.0" prefWidth="150.0" />
+      <Label layoutX="3.0" layoutY="724.0" prefHeight="37.0" prefWidth="238.0" text="Choose Server Directory :">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="5.0" layoutY="677.0" prefHeight="44.0" prefWidth="213.0" style="-fx-background-color: white;" text="        UPLOAD Files" textFill="#30a4e8">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="buttonReset" layoutX="540.0" layoutY="70.0" mnemonicParsing="false" onAction="#buttonResetAction" prefHeight="44.0" prefWidth="70.0" text="Refresh">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="buttonMakedir" layoutX="487.0" layoutY="634.0" mnemonicParsing="false" onAction="#buttonMakeDirAction" prefHeight="37.0" prefWidth="138.0" text="Make new Directory">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="textFieldDirName" layoutX="556.0" layoutY="431.0" prefHeight="109.0" prefWidth="379.0" promptText="Enter Directory Name.." visible="false" />
+      <Button fx:id="buttonEnterDirName" layoutX="865.0" layoutY="438.0" mnemonicParsing="false" onAction="#buttonEnterDirNameAction" prefHeight="95.0" prefWidth="70.0" text="Enter" visible="false" />
+   </children>
+</AnchorPane>

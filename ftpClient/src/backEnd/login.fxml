@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="461.0" prefWidth="423.0" style="-fx-background-color: White;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="frontEnd.LoginController">
+   <children>
+      <Label alignment="CENTER" layoutX="65.0" layoutY="63.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="Username" />
+      <Label alignment="CENTER" layoutX="65.0" layoutY="108.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="Password" />
+      <TextField fx:id="userNameText" layoutX="169.0" layoutY="63.0" promptText="Enter Your Unique Username" text="Admin" />
+      <PasswordField fx:id="passwordText" layoutX="169.0" layoutY="108.0" promptText="Password" text="103115" />
+      <Label layoutX="140.0" layoutY="24.0" prefHeight="17.0" prefWidth="120.0" text="Ftp Client Server" textFill="#250e0e">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Arc fill="#031425" layoutX="131.0" layoutY="33.0" length="270.0" radiusX="8.0" radiusY="8.0" startAngle="45.0" stroke="BLACK" strokeType="INSIDE" type="ROUND" />
+      <Label layoutX="65.0" layoutY="153.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="Host Address" />
+      <TextField fx:id="serverAddressText" layoutX="169.0" layoutY="153.0" promptText="Host Address" text="172.20.51.89" />
+    <Button fx:id="resetButton" layoutX="178.0" layoutY="243.0" mnemonicParsing="false" onAction="#resetButtonAction" style="-fx-background-color: grey;" text="Reset" />
+      <Button fx:id="loginButton" layoutX="244.0" layoutY="243.0" mnemonicParsing="false" onAction="#loginButtonAction" style="-fx-background-color: Grey;" text="Sign In" />
+      <Label layoutX="66.0" layoutY="197.0" prefHeight="25.0" prefWidth="75.0" style="-fx-background-color: grey;" text="      Port" />
+      <TextField fx:id="portText" layoutX="169.0" layoutY="197.0" promptText="Port" text="20000" />
+   </children>
+</AnchorPane>

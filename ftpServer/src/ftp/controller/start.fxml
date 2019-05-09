@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="250.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ftp.controller.StartController">
+   <children>
+      <Label alignment="CENTER" layoutX="60.0" layoutY="113.0" prefHeight="25.0" prefWidth="75.0" text="Port" />
+      <TextField fx:id="nPortText" layoutX="142.0" layoutY="110.0" prefHeight="31.0" prefWidth="226.0" promptText="Enter nPort Number" text="20000" />
+      <Label layoutX="142.0" layoutY="22.0" prefHeight="28.0" prefWidth="116.0" text=" FTP SERVER" textFill="#070707">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <Button fx:id="startButton" layoutX="175.0" layoutY="191.0" mnemonicParsing="false" onAction="#startButtonAction" text="Start" textAlignment="CENTER" />
+   </children>
+</AnchorPane>
